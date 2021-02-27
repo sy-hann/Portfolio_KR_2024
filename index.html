@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="">
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-
+    <script src="https://kit.fontawesome.com/e8b6b8d61d.js" crossorigin="anonymous"></script>
     <title>Seoyeon's Portfolio 2021</title>
+    <script src="assets/js/main.js" defer></script>
 </head>
 <body>
     <!-- SCROLL TOP -->
     <a href="#" class="scrollTop" id="scrollTop">
-        <i class='bx bx-chevron-up scrollTop__icon'></i>
+        <i class="fas fa-chevron-up scrollTop__icon"></i>
     </a>
     <!-- HEADER -->
     <header class="l-header" id="header">
@@ -31,14 +31,34 @@
             </div>
 
             <div class="nav__toggle" id="nav__toggle">
-                <i class='bx bx-menu'></i>
+                <i class="fas fa-bars"></i>
             </div>
         </nav>
     </header>
-    <main class="l-main"></main>
+
+    <main class="l-main">
+        <!-- HOME -->
+        <section class="home" id="home">
+            <div class="home__container bd-container bd-grid">
+                <div class="home__data">
+                    <span class="home__greeting">Hello, my name is</span>
+                    <h1 class="home__name">Seoyeon Han</h1>
+                    <span class="home__profession">Web Publisher</span>
+                    <a download="" href="assets/pdf/" class="button"></a>
+                </div>
+
+                <div class="home__social">
+                    <a href="" class="home__social-icon"><i class="fab fa-github-square"></i></a>
+                    <a href="" class="home__social-icon"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+                <div class="home__img">
+                    <img src="assets/images/home.jpg" alt="person">
+                </div>
+            </div>
+        </section>
+    </main>
 
 
-    <!-- MAIN JS -->
-    <script src="assets/js/main.js"></script>
 </body>
 </html>
