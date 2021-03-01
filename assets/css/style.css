@@ -301,6 +301,14 @@ img {
   background-color: var(--first-color-light);
 }
 
+.button-white {
+  background-color: var(--first-color-lighten);
+  color: var(--first-color-dark);
+}
+
+.button-white:hover {
+  background-color: var(--first-color-lighten);
+}
 /* ABOUT */
 .about__data {
   text-align: center;
@@ -363,4 +371,63 @@ img {
 .qualification__work {
   display: block;
   margin-bottom: var(--mb-1);
+}
+
+/* SERVICES */
+.services__data {
+  padding: 3rem 1rem;
+  background-color: var(--white-color);
+  border-radius: 1.5rem;
+  text-align: center;
+  transition: 0.4s;
+  box-shadow: 0 4px 6px rgba(174, 190, 205, 0.3);
+}
+
+.services__icon,
+.services__title {
+  margin-bottom: var(--mb-2);
+  color: var(--first-color);
+}
+
+.services__icon {
+  font-size: 3rem;
+}
+
+.services__title {
+  font-size: var(--h3-font-size);
+}
+
+.services__description {
+  margin-bottom: var(--mb-4);
+}
+
+.services__data:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 6px 8px rgba(174, 190, 205, 0.4);
+}
+
+/* PROJECT IN MIND */
+.project__container {
+  padding: 1.5rem;
+  background-color: var(--first-color-dark);
+  color: var(--first-color-lighten);
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.project__icon,
+.project__title {
+  margin-bottom: var(--mb-1);
+}
+
+.project__icon {
+  font-size: 3.5rem;
+}
+
+.project__title {
+  font-size: 1.5rem;
+}
+
+.project__description {
+  margin-bottom: var(--mb-4);
 }
