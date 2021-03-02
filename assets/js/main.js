@@ -53,3 +53,24 @@ function scrollTop(){
     if(this.scrollY >= 560) scrollTop.classList.add('show__scroll');else scrollTop.classList.remove('show__scroll');
 }
 window.addEventListener('scroll', scrollTop)
+
+// Portfolio - MIXITUP Filter 
+const mixer = mixitup('.portfolio__container', {
+    selectors: {
+        target: '.portfolio__content'
+    },
+    animation: {
+        duration: 400
+    }
+});
+
+// Link active Portfolio
+const linkPortfolio = document.querySelectorAll('.portfolio__item')
+
+function activePortfolio(){
+    if(linkPortfolio){
+        linkPortfolio.forEach(l => l.classList.remove('active__portfolio'))
+        this.classList.add('active__portfolio')
+    }
+}
+linkPortfolio.forEach(l => l.addEventListener('click', activePortfolio))

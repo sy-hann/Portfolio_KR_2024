@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/e8b6b8d61d.js" crossorigin="anonymous"></script>
     <title>Seoyeon's Portfolio 2021</title>
+
+    <script src="assets/js/mixitup.min.js"></script>
     <script src="assets/js/main.js" defer></script>
 </head>
 <body>
@@ -229,15 +231,15 @@
             <h2 class="section-title">Portfolio</h2>
 
             <div class="portfolio__nav">
-                <span class="portfolio__item">ALL</span>
-                <span class="portfolio__item">Responsive</span>
-                <span class="portfolio__item">Fixed</span>
-                <span class="portfolio__item">JS</span>
+                <span class="portfolio__item active__portfolio" data-filter="all">ALL</span>
+                <span class="portfolio__item" data-filter=".responsive">Responsive</span>
+                <span class="portfolio__item" data-filter=".fixed">Fixed</span>
+                <span class="portfolio__item" data-filter=".js">JS</span>
             </div>
             
             <div class="portfolio__container bd-grid">
                 <!-- 1 -->
-                <div class="portfolio__content">
+                <div class="portfolio__content mix responsive">
                     <a href="#"><img src="assets/images/work1.jpg" alt="" class="portfolio__img"></a>
                     <div class="portfolio__data">
                         <span class="portfolio__subtitle">Responsive</span>
@@ -247,7 +249,7 @@
                 </div>
 
                 <!-- 2 -->
-                <div class="portfolio__content">
+                <div class="portfolio__content mix responsive">
                     <a href="#"><img src="assets/images/work2.jpg" alt="" class="portfolio__img"></a>
                     <div class="portfolio__data">
                         <span class="portfolio__subtitle">Web basic / Mobile</span>
@@ -257,7 +259,7 @@
                 </div>
 
                 <!-- 3 -->
-                <div class="portfolio__content">
+                <div class="portfolio__content mix responsive">
                     <a href="#"><img src="assets/images/work3.jpg" alt="" class="portfolio__img"></a>
                     <div class="portfolio__data">
                         <span class="portfolio__subtitle">JavaScript</span>
@@ -267,7 +269,7 @@
                 </div>
 
                 <!-- 4 -->
-                <div class="portfolio__content">
+                <div class="portfolio__content mix responsive">
                     <a href="#"><img src="assets/images/work4.jpg" alt="" class="portfolio__img"></a>
                     <div class="portfolio__data">
                         <span class="portfolio__subtitle">Responsive</span>
@@ -277,7 +279,7 @@
                 </div>
 
                 <!-- 5 -->
-                <div class="portfolio__content">
+                <div class="portfolio__content mix fixed">
                     <a href="#"><img src="assets/images/work5.jpg" alt="" class="portfolio__img"></a>
                     <div class="portfolio__data">
                         <span class="portfolio__subtitle">Responsive</span>
@@ -287,7 +289,7 @@
                 </div>
 
                 <!-- 6 -->
-                <div class="portfolio__content">
+                <div class="portfolio__content mix fixed">
                     <a href="#"><img src="assets/images/work6.jpg" alt="" class="portfolio__img"></a>
                     <div class="portfolio__data">
                         <span class="portfolio__subtitle">Responsive</span>
@@ -297,7 +299,7 @@
                 </div>
 
                 <!-- 7 -->
-                <div class="portfolio__content">
+                <div class="portfolio__content mix js">
                     <a href="#"><img src="assets/images/work1.jpg" alt="" class="portfolio__img"></a>
                     <div class="portfolio__data">
                         <span class="portfolio__subtitle">Web basic / Mobile</span>
@@ -307,7 +309,7 @@
                 </div>
 
                 <!-- 8 -->
-                <div class="portfolio__content">
+                <div class="portfolio__content mix js">
                     <a href="#"><img src="assets/images/work2.jpg" alt="" class="portfolio__img"></a>
                     <div class="portfolio__data">
                         <span class="portfolio__subtitle">JavaScript</span>
@@ -317,7 +319,7 @@
                 </div>
 
                 <!-- 9 -->
-                <div class="portfolio__content">
+                <div class="portfolio__content mix js">
                     <a href="#"><img src="assets/images/work3.jpg" alt="" class="portfolio__img"></a>
                     <div class="portfolio__data">
                         <span class="portfolio__subtitle">JavaScript</span>
