@@ -567,8 +567,13 @@ img {
   margin-bottom: var(--mb-2);
 }
 
-.testimonial__container > div > div:nth-child(2n + 1) {
-  display: none;
+.swiper-pagination {
+  position: relative;
+  margin-top: 20px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--first-color);
 }
 
 /* CONTACT ME */
