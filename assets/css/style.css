@@ -345,6 +345,11 @@ img {
 
 .button-light {
   background-color: var(--first-color-light);
+  margin: 0 var(--mb-1) var(--mb-1) 0;
+}
+
+.button-light span {
+  font-size: 0.688rem;
 }
 
 .button-white {
