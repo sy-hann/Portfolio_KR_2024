@@ -78,7 +78,6 @@ linkPortfolio.forEach(l => l.addEventListener('click', activePortfolio))
 // Swiper carousel
 const swiper = new Swiper('.swiper-container', {
     spaceBetween:16,
-    loop: true,
     grabCursor:true,
   
     pagination: {

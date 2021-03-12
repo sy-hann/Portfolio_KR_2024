@@ -68,7 +68,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
-  background-color: var(--first-color-lighten);
+  background-color: var(--white-color);
   color: var(--text-color);
   line-height: 1.6;
 }
@@ -208,7 +208,8 @@ img {
   bottom: -0.7rem;
   left: 18%;
   width: 65%;
-  height: 3px;
+  height: 4px;
+  border-radius: 2rem;
   background-color: var(--first-color-light);
 }
 
@@ -438,7 +439,7 @@ img {
 /* SERVICES */
 .services__data {
   padding: 3rem 1rem;
-  background-color: var(--white-color);
+  background-color: var(--first-color-lighten);
   border-radius: 1.5rem;
   text-align: center;
   transition: 0.4s;
@@ -460,7 +461,7 @@ img {
 }
 
 .services__description {
-  margin-bottom: var(--mb-4);
+  margin-bottom: var(--mb-1);
 }
 
 .services__data:hover {
@@ -537,7 +538,7 @@ img {
 }
 
 .portfolio__content:hover .portfolio__img {
-  transform: scale(1.02);
+  transform: scale(1.04);
 }
 
 /* JS Active menu portfolio */
@@ -546,18 +547,37 @@ img {
   font-weight: var(--font-bold);
 }
 
-/* TESTIMONIAL */
-.testimonial__content {
-  display: grid;
-  background-color: var(--first-color-dark);
-  color: var(--first-color-lighten);
-  border-radius: 0.5rem;
-  padding: 2rem 1rem;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(47, 10, 13, 0.25);
+/* TESTIMONIAL => principles*/
+
+.testimonial__icon,
+.testimonial__title {
+  margin-bottom: var(--mb-2);
+  color: var(--first-color-dark);
 }
 
-.testimonial__img {
+.testimonial__icon {
+  font-size: 3rem;
+}
+
+.testimonial__title {
+  font-size: var(--h2-font-size);
+}
+
+.testimonial__description {
+  margin-bottom: var(--mb-2);
+}
+
+.testimonial__content {
+  display: grid;
+  background-color: var(--first-color-lighten);
+  color: var(--text-color);
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 4px 4px 8px rgba(47, 10, 13, 0.3);
+}
+
+/* .testimonial__img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -570,8 +590,10 @@ img {
   font-size: var(--small-font-size);
   color: var(--first-color-light);
   margin-bottom: var(--mb-2);
-}
+} */
 
+.swiper-container {
+}
 .swiper-pagination {
   position: relative;
   margin-top: 20px;
@@ -591,7 +613,7 @@ img {
 }
 
 .contact__box {
-  background-color: var(--white-color);
+  background-color: var(--first-color-lighten);
   border-radius: 0.5rem;
   padding: 1.5rem;
   text-align: center;
