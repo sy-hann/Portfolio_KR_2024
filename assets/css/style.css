@@ -306,12 +306,13 @@ img {
 
 .home__img {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: 20px;
+  bottom: 20px;
 }
 
 .home__img img {
-  width: 240px;
+  width: 300px;
+  opacity:0.5;
 }
 
 .home__social {
@@ -545,6 +546,18 @@ img {
 .active__portfolio {
   color: var(--first-color-dark);
   font-weight: var(--font-bold);
+  position: relative;
+}
+
+.active__portfolio::after {
+  content: "";
+  position: absolute;
+  bottom: -0.6rem;
+  left: 18%;
+  width: 70%;
+  height: 4px;
+  border-radius: 2rem;
+  background-color: var(--first-color-light);
 }
 
 /* TESTIMONIAL => principles*/
@@ -792,8 +805,12 @@ img {
     margin-bottom: 0;
   }
 
+  .home__img{
+    width:360px;
+  }
+
   .home__img img {
-    width: 430px;
+    width: 360px;
   }
 
   .about__img {
@@ -842,8 +859,14 @@ img {
     margin-right: auto;
   }
 
+  .home__img{
+    width:400px;
+    right: 5%;
+    bottom: 10%;
+  }
+
   .home__img img {
-    width: 550px;
+    width: 400px;
   }
 
   .qualification__container {
