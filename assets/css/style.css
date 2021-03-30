@@ -70,10 +70,10 @@ html {
 /* Variables Dark Theme */
 body.dark-theme {
   --title-color: #f1f3f2;
-  --text-color: #c7d1cc;
-  --body-color: #191a1f;
+  --text-color: #fafbff;
+  --body-color: #18191f;
   --body-second-color: #000;
-  --container-color: #1b1d2e;
+  --container-color: #252529;
 }
 
 /* Button Dark / Light */
@@ -732,7 +732,7 @@ span.portfolio__item {
 }
 
 .contact__social {
-  color: var(--first-color-light);
+  color: var(--text-color);
   font-size: 1.25rem;
   margin: 0 var(--mb-1);
 }
