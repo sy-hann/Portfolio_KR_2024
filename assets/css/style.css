@@ -307,7 +307,7 @@ img {
   row-gap: 2rem;
   padding-top: var(--mb-5);
 
-  background: url(/assets/images/bg.jpg);
+  background: url(../images/bg.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -446,7 +446,7 @@ div.planet {
   transform: translate(-50%, -50%);
   width: 15rem;
   height: 15rem;
-  background: url(/assets/images/image.jpg);
+  background: url(../images/image.jpg);
   background-size: cover;
   background-repeat: repeat-x;
   border-radius: 50%;
