@@ -655,6 +655,7 @@ div.planet {
 
 .services__description {
   margin-bottom: var(--mb-1);
+  word-break: keep-all;
 }
 
 .services__data:hover {
@@ -774,6 +775,7 @@ span.portfolio__item {
 
 .testimonial__description {
   margin-bottom: var(--mb-2);
+  word-break: keep-all;
 }
 
 .testimonial__content {
@@ -1074,8 +1076,8 @@ span.portfolio__item {
   }
 
   .circle span {
-    font-size: 3em;
-    padding: 5px 11px;
+    font-size: 2.2em;
+    padding: 0px 11px;
     transform: rotateY(calc(var(--i) * calc(360deg / 32))) translateZ(200px);
   }
 }
