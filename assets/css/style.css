@@ -161,6 +161,10 @@ img {
   gap: 1.5rem;
 }
 
+.bd-grid + .qualification__title {
+  margin-top: 2.5rem;
+}
+
 .l-header {
   width: 100%;
   position: fixed;
