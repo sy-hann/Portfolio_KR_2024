@@ -861,39 +861,6 @@ span.portfolio__item {
   box-shadow: 0 6px 8px rgba(174, 190, 205, 0.4);
 }
 
-.contact__inputs {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 0.5rem;
-}
-
-.contact__input,
-.contact__button {
-  outline: none;
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-}
-
-.contact__input {
-  width: 100%;
-  padding: 1rem;
-  border: 2px solid var(--first-color-light);
-  color: var(--first-color);
-  border-radius: 0.5rem;
-  margin-bottom: var(--mb-1);
-}
-
-.contact::placeholder {
-  color: var(--first-color-light);
-  font-family: var(--body-font);
-  font-weight: var(--font-semi-bold);
-}
-
-.contact__button {
-  cursor: pointer;
-  border: none;
-}
-
 /* FOOTER */
 .footer {
   background-color: var(--first-color-dark);
@@ -946,11 +913,6 @@ span.portfolio__item {
 
   .about__container {
     grid-template-columns: repeat(1, 1fr);
-  }
-
-  .contact__form {
-    width: 500px;
-    justify-self: center;
   }
 }
 
