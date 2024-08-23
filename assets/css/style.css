@@ -728,7 +728,6 @@ span.portfolio__item {
 }
 
 /* TESTIMONIAL => principles*/
-
 .testimonial__icon,
 .testimonial__title {
   margin-bottom: var(--mb-2);
@@ -788,19 +787,25 @@ span.portfolio__item {
 
 /* CONTACT ME */
 .contact__container {
-  row-gap: 2.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .contact__content {
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact__image {
+  margin: 0 auto;
 }
 
 .contact__box {
-  background-color: var(--container-color);
-  border-radius: 0.5rem;
-  padding: 1.5rem;
+  padding: 1rem 1.5rem;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(174, 190, 205, 0.3);
+  display: flex;
+  align-items: center;
 }
 
 .contact__icon,
@@ -809,13 +814,15 @@ span.portfolio__item {
 }
 
 .contact__icon {
-  font-size: 2rem;
+  font-size: 1rem;
+  padding-right: 1rem;
 }
 
-.contact__title {
+/* .contact__title {
   font-size: var(--h3-font-size);
   margin: var(--mb-1) 0;
-}
+  padding: 0 .5rem;
+} */
 
 .contact__social {
   color: var(--text-color);
@@ -823,9 +830,9 @@ span.portfolio__item {
   margin: 0 var(--mb-1);
 }
 
-.contact__box:hover {
+/* .contact__box:hover {
   box-shadow: 0 6px 8px rgba(174, 190, 205, 0.4);
-}
+} */
 
 /* FOOTER */
 .footer {
@@ -878,6 +885,10 @@ span.portfolio__item {
 
   .about__container {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contact__container {
+    flex-direction: row;
   }
 }
 
