@@ -29,31 +29,25 @@
 	<script src="assets/js/main.js" defer></script>
 </head>
 <body>
-	<!-- SCROLL TOP -->
-	<a href="#" class="scrollTop show__scroll" id="scrollTop">
-		<i class="fas fa-chevron-up scrollTop__icon"></i>
-	</a>
 	<!-- HEADER -->
 	<header class="l-header" id="header">
+		<div>
+			<!-- <img src="assets/images/favicon" alt="logo"> -->
+			<h1><a href="#" class="nav__logo">SY H.</a></h1>
+		</div>
 		<nav class="nav bd-container">
-			<a href="#" class="nav__logo">SY H.</a>
-
-			<div class="nav__menu" id="nav__menu">
-				<ul class="nav__list">
-					<li class="nav__item"><a href="#home" class="nav__link active__link">Home</a></li>
-					<li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-					<!-- <li class="nav__item"><a href="#strength" class="nav__link">Strength</a></li> -->
-					<li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
-					<li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-
-					<li><i class='fas fa-toggle-off change-theme' id="theme-button"></i></li>
-				</ul>
-			</div>
-
-			<div class="nav__toggle" id="nav__toggle">
-				<i class="fas fa-bars"></i>
-			</div>
+			<ul class="nav__list">
+				<li class="nav__item"><a href="#home" class="nav__link active__link">Home</a></li>
+				<li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+				<li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+				<!-- <li class="nav__item"><a href="#contact" class="nav__link">Testimonial</a></li> -->
+				<li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+				<li><i class="fas fa-toggle-off change-theme" id="theme-button"></i></li>
+			</ul>
 		</nav>
+		<!-- <div class="nav__toggle" id="nav__toggle">
+			<i class="fas fa-bars"></i>
+		</div> -->
 	</header>
 
 	<main class="l-main">
@@ -67,14 +61,12 @@
 						<h1 class="home__name">한서연<span>입니다.</span></h1>
 						<!-- <a download="" href="assets/pdf/Korean.ver" class="button button-light home__button">Download CV <span>[한]</span></a> -->
 					</div>
-	
 					<div class="home__social">
 						<a href="https://github.com/sy-hann" target="blank" class="home__social-icon"><i class="fab fa-github-square"></i></a>
 						<!-- <a href="" target="blank" class="home__social-icon"><i class="fab fa-linkedin"></i></a> -->
 					</div>
 				</div>
 				
-
 				<!-- spiinning planet -->
 				<div class="planet">
 					<div class="earth"></div>
@@ -231,7 +223,6 @@
 			</div>
 		</section>
 
-
 		<!-- Principles -->
 		<section class="testimonial section bd-container">
 			<span class="section-subtitle">My strength in work</span>
@@ -261,25 +252,6 @@
 					</div>
 				</div>
 				<div class="swiper-pagination"></div>
-			</div>
-		</section>
-		
-
-		<!-- PROJECT IN MIND -->
-		<section class="project section bd-container">
-			<div class="project__container bd-grid">
-				<div class="project__data">
-					<i class="far fa-comment-alt project__icon"></i>
-
-					<div>
-						<h2 class="project__title">Project in mind</h2>
-						<p class="project__description">Hire me to carry out the following projects.</p>
-					</div>
-
-					<div>
-						<a href="#contact" class="button button-white">Contact me</a>
-					</div>
-				</div>
 			</div>
 		</section>
 
@@ -495,6 +467,11 @@
 			</div>
 		</section>
 
+		<!-- TESTIMONIAL -->
+		<section class="testimonial section bd-container" id="testimonial">
+			
+		</section>
+
 		<!-- CONTACT ME -->
 		<section class="contact section bd-container" id="contact">
 			<span class="section-subtitle">For projects</span>
@@ -518,6 +495,13 @@
 				</div>
 			</div>
 		</section>
+
+		<!-- SCROLL TOP -->
+		<aside>
+			<a href="#" class="scrollTop show__scroll" id="scrollTop">
+				<i class="fas fa-chevron-up scrollTop__icon"></i>
+			</a>
+		</aside>
 	</main>
 
 	<!-- FOOTER -->
