@@ -529,7 +529,7 @@ button:focus {
 	position: relative;
 	color: var(--color-black);
 	text-align: center;
-	background-color: var(--color-white);
+	background: #efddc1;
 }
 #contact::after {
 	content: '';
