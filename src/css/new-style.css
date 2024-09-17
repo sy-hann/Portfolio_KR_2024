@@ -72,7 +72,12 @@ body.dark-theme #testimonial,
 body.dark-theme #contact::after {
 	background-color: #44625a;
 }
-
+body.dark-theme #contact {
+	background-color: #44625a;
+}
+body.dark-theme #contact::after {
+	background-color: var(--color-dark-green);
+}
 
 @media screen and (max-width: 768px) {
 	:root {
@@ -209,8 +214,9 @@ button:focus {
 	overflow: hidden;
 	line-height: 0;
 	background-color: var(--color-beige);
-	mask: var(--divider-single-wave);
-	-webkit-mask: var(--divider-single-wave);
+	mask: var(--divider-multi-waves);
+	-webkit-mask: var(--divider-multi-waves);
+	transform: rotateX(180deg);
 }
 .home__container {
 	display: flex;
@@ -356,12 +362,12 @@ button:focus {
 	position: relative;
 	padding-bottom: 8rem;
 }
-#work::after {
+/* #work::after {
 	content: '';
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	/* width: calc(111% + 1.3px); */
+	width: calc(111% + 1.3px);
 	width: 100%;
 	height: 70px;
 	overflow: hidden;
@@ -370,7 +376,7 @@ button:focus {
 	background-color: var(--color-white);
 	mask: var(--divider-multi-waves);
 	-webkit-mask: var(--divider-multi-waves);
-}
+} */
 .categories {
 	display: flex;
 	justify-content: center;
@@ -523,6 +529,7 @@ button:focus {
 	position: relative;
 	color: var(--color-black);
 	text-align: center;
+	background-color: var(--color-white);
 }
 #contact::after {
 	content: '';
@@ -534,7 +541,7 @@ button:focus {
 	height: 63px;
 	overflow: hidden;
 	line-height: 0;
-	background-color: var(--color-white);
+	background-color: var(--color-beige);
 	mask: var(--divider-arrow);
 	-webkit-mask: var(--divider-arrow);
 }
