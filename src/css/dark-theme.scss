@@ -1,0 +1,84 @@
+body.dark-theme {
+	$color-primary: $color-beige;
+	$color-accent: $color-green;
+	$color-text: $color-white;
+	$color-bg: $color-dark-green;
+	
+	background-color: $color-bg;
+	.title,
+	.description {
+		color: $color-text;
+	}
+	& .header {
+		&--bg {
+			background-color: rgba(3, 27, 21,.8);
+		}
+		a, &__toggle {
+			color: $color-text;
+		}
+		&__menu__item {
+			&--active {
+				color: $color-black!important;
+				border: 1px solid $color-accent;
+			}
+			
+			&:hover {
+				border-color: $color-text;
+			}
+		}
+		&--active {
+			background-color: #031b15;
+		}
+	}
+	.change-theme {
+		color: $color-text;
+	}
+
+	#home {
+		background: $dark-home-bg-gradient;
+		color: $color-text;
+		&::after {
+			background-color: $color-dark-green;
+		}
+	}
+	.home {
+		&__title {
+			&--strong {
+				color: $color-accent;
+			}
+		}
+	}
+
+	#work::after {
+		bottom: -1px;
+		background-color: #44625a;
+	}
+	.major {
+		&__title,
+		&__area,
+		&__work {
+			color: $color-primary;
+		}
+	}
+	#testimonial {
+		background-color: #44625a;
+	}
+	#contact {
+		background-color: #44625a;
+		&::after {
+			background-color: $color-dark-green;
+		}
+	}
+	.contact {
+		&__link,
+		&__text {
+			color: $color-text;
+		}
+		&__link {
+			&:hover{
+				color: $color-bg;
+			}
+		}
+	}
+
+}

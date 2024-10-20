@@ -1,0 +1,31 @@
+
+* {
+	box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	background: $color-bg;
+}
+h1, h2, h3, p, ul {
+	margin: 0;
+}
+ul {
+	list-style: none;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+	color: $color-black;
+}
+button {
+	background-color: transparent;
+	outline: 0;
+	border: 0;
+}
+button:focus {
+	outline: 1px solid transparent;
+}

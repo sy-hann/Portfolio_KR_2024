@@ -1,0 +1,129 @@
+#work {
+	color: $color-text;
+	position: relative;
+	padding-bottom: 8rem;
+}
+/* #work::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: calc(111% + 1.3px);
+	width: 100%;
+	height: 70px;
+	overflow: hidden;
+	line-height: 0;
+	transform: rotate(180deg);
+	background-color: $color-white;
+	mask: $divider-multi-waves;
+	-webkit-mask: $divider-multi-waves;
+} */
+.categories {
+	display: flex;
+	justify-content: center;
+	margin: 2rem;
+	gap: 1rem;
+}
+.category {
+	color: $color-black;
+	background-color: $color-white;
+	font-size: $normal-font-size;
+	padding: 0.5rem 2rem;
+	border-radius: 4px;
+	border: 1px solid $color-black;
+	cursor: pointer;
+	white-space: nowrap;
+	transition: background-color 150ms ease-in;
+	/* position: relative; */
+	&:hover {
+		background-color: $color-accent;
+	}
+	&--selected {
+		background-color: $color-accent;
+		color: $color-black;
+		font-weight: 700;
+		// &::after {
+		// 	content: "";
+		// 	position: absolute;
+		// 	bottom: -0.6rem;
+		// 	left: 18%;
+		// 	width: 70%;
+		// 	height: 4px;
+		// 	border-radius: 2rem;
+		// 	background-color: $color-accent-variant;
+		// }
+	}
+}
+
+.projects {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 1.5rem;
+	transition: all 200ms ease-out;
+	&.anim-out {
+		opacity: 0;
+		transform: scale(0.96) translateY(20px);
+	}
+}
+
+.project {
+	background-color: $color-white;
+	border-radius: 8px;
+	overflow: hidden;
+	border: 1px solid $color-black;
+	/* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+	&:hover &__img {
+		transform: scale(1.05);
+	}
+	&__img {
+		width: 100%;
+		transition: 0.4s;
+	}
+	&__data {
+		padding: 1rem 1.5rem;
+	}
+	&__title {
+		/* font-size: $h3-font-size; */
+		font-size: 1.1rem;
+		color: $color-gray;
+		margin-bottom: 1rem;
+	}
+	&__subtitle {
+		font-size: $small-font-size;
+		color: $color-gray;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.projects {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.categories {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		margin: 2rem 0;
+	}
+	.category {
+		width: 100%;
+	}
+	.projects {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2rem;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.categories {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.category {
+		padding: 0.5rem 1rem;
+	}
+	.projects {
+		grid-template-columns: auto
+	}
+}

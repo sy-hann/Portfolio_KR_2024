@@ -1,0 +1,41 @@
+#contact {
+	position: relative;
+	color: $color-black;
+	text-align: center;
+	background: #efddc1;
+	
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		/* width: calc(100% + 1.3px); */
+		height: 63px;
+		overflow: hidden;
+		line-height: 0;
+		background-color: $color-beige;
+		mask: $divider-arrow;
+		-webkit-mask: $divider-arrow;
+	}
+}
+
+.contact {
+	&__links {
+		display: flex;
+		justify-content: center;
+		gap: 1rem;
+		padding: 1rem;
+		font-size: 2rem;
+	}
+	&__link {
+		color: $color-text;
+		transition: color 200ms ease-in;
+		&:hover {
+			color: $color-accent;
+		}
+	}
+	&__text {
+		color: $color-text;
+	}
+}

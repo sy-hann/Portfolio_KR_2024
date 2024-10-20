@@ -1,0 +1,42 @@
+.scroll-top {
+	position: fixed;
+	bottom: 1.5rem;
+	right: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5rem;
+	background-color: $color-white;
+	border: 2px solid $color-black;
+	border-radius: 0.5rem;
+	z-index: 10;
+	transition: all 200ms ease-in;
+	opacity: 0;
+	&:hover {
+		background-color:  $color-black;
+		border: 2px solid transparent;
+		& .scroll-top__icon {
+			color: $color-white;
+		}
+	}
+	&__icon {
+		font-size: 1.2rem;
+		color: $color-black;
+	}
+	&--active {
+		opacity: 1;
+		bottom: 3rem;
+	}
+}
+
+@media screen and (max-width:768px) {
+	.scroll-top {
+		bottom: 0;
+		right: 1rem;
+		padding: 1rem;
+		&--active {
+			bottom: 1.5rem;
+		}
+	}
+	
+}

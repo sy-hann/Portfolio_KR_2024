@@ -1,0 +1,26 @@
+/* common */
+.section {
+	padding: 4rem;
+}
+.max-container {
+	max-width: $size-max-width;
+	margin: auto;
+}
+.title {
+	font-size: $section-title-size;
+	margin: 1rem 0;
+	text-align: center;
+	color: $color-text;
+}
+.description {
+	font-size: $h3-font-size;
+	margin: .5rem 0;
+	text-align: center;
+	color: $color-text;
+}
+
+@media screen and (max-width: 768px) {
+	.section {
+		padding: 4rem 1.5rem;
+	}
+}

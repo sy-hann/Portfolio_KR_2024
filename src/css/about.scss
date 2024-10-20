@@ -1,0 +1,116 @@
+.bd-grid {
+	display: grid;
+	gap: 1.5rem;
+	& + .majors__title {
+		margin-top: 2.5rem;
+	}
+}
+.majors {
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2.5rem;
+}
+.major {
+	&__title {
+		font-size: $h3-font-size;
+		color: $color-primary;
+		margin: 1rem 0;
+		display: flex;
+		align-items: center;
+	
+		&__icon {
+			font-size: $h3-font-size;
+			margin-right: 0.5rem;
+		}
+	}
+	&__box {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 1rem;
+		border-bottom: 1px solid #ccc;
+	}
+	&__area {
+		font-size: $normal-font-size;
+		color: $color-primary;
+		margin-bottom: 0.5rem;
+		font-weight: 500;
+	}
+	&__work {
+		font-size: $smaller-font-size;
+		color: $color-primary;
+		display: block;
+		margin-left: .5rem;
+	}
+}
+.strengths {
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2.5rem;
+	margin-top: 2.5rem;
+	cursor: default;
+}
+.strength {
+	&__icon {
+		margin-bottom: 1rem;
+		font-size: $biggest-font-size;
+		color: $color-black;
+		transition: all 300ms ease;
+
+		&.fa-laptop-code {
+			color: #ecdabd;
+		}
+		&.fa-users {
+			color: #e3edbf;
+		}
+		&.fa-user-circle {
+			color: #cbeae3;
+		}
+		&.fa-fire {
+			color: #cad4ea;
+		}
+	}
+	&__title {
+		margin-bottom: 1rem;
+		color: $color-black;
+		font-size: $h3-font-size;
+	}
+	&__description {
+		word-break: keep-all;
+	}
+	&__content {
+		display: grid;
+		color: $color-black;
+		background-color: $color-white;
+		border-radius: 1rem;
+		padding: 2rem 1.5rem;
+		text-align: center;
+		border: 1px solid $color-black;
+		/* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+		&:hover .strength__icon {
+			transform: rotate(-15deg) scale(1.2);
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.majors {
+		grid-template-columns: auto;
+		gap: 2rem;
+	}
+	.major {
+		&__box {
+			flex-direction: column;
+		}
+		&__work {
+			margin-left: 0;
+			margin-bottom: .5rem;
+		}
+	}
+	.strengths {
+		gap: 2rem;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.strengths {
+		grid-template-columns: auto;
+	}
+}
